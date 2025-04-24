@@ -1,5 +1,92 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
+    font-family: sans-serif;
+  }
+  
+  body {
+    position: relative;
+  }
+  
+  .parent_container {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  
+  .container {
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  
+  .phone_navbar {
+    display: none;
+  }
+  
+  header {
+    padding: 20px 0;
+    background-color: rgb(242, 242, 242);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  }
+  
+  .header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+  
+  .header_wrapper .nav_wrap {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .header_wrapper .nav_wrap nav ul {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style-type: none;
+  }
+  
+  .header_wrapper .nav_wrap nav ul li:first-child:hover,
+  .header_wrapper .nav_wrap nav ul li:last-child:hover {
+    cursor: pointer;
+  }
+  
+  .header_wrapper .nav_wrap nav ul li a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.4s;
+    position: relative;
+  }
+  
+  .header_wrapper .nav_wrap nav ul li a:hover {
+    color: #ffa630;
+  }
+  
+  .header_wrapper .nav_wrap nav ul li a::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #ffa630;
+    position: absolute;
+    bottom: -6px;
+    transition: 0.4s;
+  }  
+  
+ 
+  
+  
